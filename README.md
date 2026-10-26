@@ -1,4 +1,4 @@
-打开theme.css，复制代码，打开Clash Verge，找到css注入，清空里面代码，粘贴复制好的代码，点击保存
+点击theme.css，复制里面代码，打开Clash Verge，找到css注入，清空里面代码，粘贴复制好的代码，点击保存
 <img width="1025" height="774" alt="image" src="https://github.com/user-attachments/assets/8ccc026e-6954-4116-8e91-a97d29d244cf" />
 <img width="1028" height="773" alt="image" src="https://github.com/user-attachments/assets/cf9e7b97-bfdc-468d-b665-8b526fbc7dfa" />
 
