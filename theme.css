@@ -12,7 +12,7 @@
      默认为内置极光渐变，离线可用。
      换成网络图片：--lg-wallpaper: url("https://example.com/bg.jpg");
      换成本地图片：需转换为 asset.localhost 地址（见 README） */
-  --lg-wallpaper: url("https://cdn.jsdelivr.net/gh/AINUQ/clash-bg@main/7.webp");
+  --lg-wallpaper: url("https://cdn.jsdelivr.net/gh/AINUQ/clash-bg@main/6.webp");
   --lg-wp-blur: 0px; /* 壁纸模糊半径，想让玻璃感更强可试 2px ~ 10px */
   --lg-wp-saturate: 1.1;
 
