@@ -13,5 +13,6 @@
 2注释:你想用自己的壁纸，把你自己的图片上传到在线网址，然后复制图片网址到第15行代码，把我的网址替换掉就变成你自己壁纸了；
 
 3注释:数字命名的.webp都是我自己上传的壁纸，想要换壁纸修改图下的数字即可，把.webp前面的数字填进去就换成功了
-<img width="1048" height="823" alt="image" src="https://github.com/user-attachments/assets/9e84edbd-1563-47b8-b50f-260b5c7297d7" />
+<img width="998" height="809" alt="image" src="https://github.com/user-attachments/assets/5ccaba4e-8e96-4b62-84e3-dabb87c46052" />
+
 
