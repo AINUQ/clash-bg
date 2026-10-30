@@ -2,7 +2,8 @@
 <img width="1034" height="813" alt="image" src="https://github.com/user-attachments/assets/2d91893c-55db-4a03-8aab-f8a7849bf55c" />
 
 点击（编辑css）ctrl+a清除里面的代码
-<img width="1048" height="823" alt="image" src="https://github.com/user-attachments/assets/fe301498-e654-446f-b099-115a9836b56c" />
+<img width="1013" height="794" alt="image" src="https://github.com/user-attachments/assets/3e3ae197-5a0b-4914-963c-5d2d66a4aa1e" />
+
 
 回到github点击Clash Verge.css文件，复制里面全部代码粘贴保存
 <img width="1010" height="810" alt="image" src="https://github.com/user-attachments/assets/fdc38f1a-d34e-4ded-afa9-823688a36146" />
