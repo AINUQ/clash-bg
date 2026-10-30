@@ -575,12 +575,13 @@ body::after {
   background-color: var(--lg-hover) !important;
 }
 
-/* 选中的节点：主色左边线 + 玻璃高亮 */
+/* 选中的节点：白色左边线 + 极淡玻璃底（应用原本是主色蓝，这里统一成白色） */
 .base-content [class*="MuiGrid"] > .MuiBox-root .MuiListItemButton-root.Mui-selected,
-.base-content .MuiList-root > .MuiListItem-root > .MuiListItemButton-root.Mui-selected {
+.base-content .MuiList-root > .MuiListItem-root > .MuiListItemButton-root.Mui-selected,
+.base-content .MuiListItemButton-root.Mui-selected {
   border-left: 3px solid var(--lg-accent) !important;
   background-color: var(--lg-accent-fill) !important;
-  background-image: var(--lg-sheen) !important;
+  background-image: none !important;
   color: var(--lg-text) !important;
   box-shadow: 0 0 14px var(--lg-accent-glow) !important;
 }
