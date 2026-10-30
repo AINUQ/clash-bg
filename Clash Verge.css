@@ -808,22 +808,26 @@ body .MuiIconButton-root {
   color: var(--lg-text-dim);
 }
 
-/* 开关：回到截图那种"极淡"的样子 —— 几乎透明的白底 + 一圈很轻的描边 */
+/* 开关：透明胶囊 —— 很淡的白底 + 一圈白色细边 + 顶部高光，不压暗、不发灰 */
 body .MuiSwitch-track {
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: none !important;
+  border: 0 !important;
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
 }
 
 body .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(255, 255, 255, 0.3) !important;
+  border: 0 !important;
+  background-color: rgba(255, 255, 255, 0.16) !important;
 }
 
 body .MuiSwitch-thumb {
   background-color: #ffffff !important;
   background-image: none !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35) !important;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.3) !important;
 }
 
 body .MuiOutlinedInput-root,
