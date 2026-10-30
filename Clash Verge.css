@@ -474,15 +474,28 @@ body::after {
 }
 
 /* 5.4 网络设置 / 代理模式卡片里那两条说明框（"系统代理已启用…" / "基于预设规则…"）：
-       原来是 1px 主色蓝边 + 实心底，这里改成玻璃描边（白边 + 淡玻璃底 + 顶部高光） */
+       原来是 1px 主色蓝边 + 实心底，这里改成玻璃描边（白边 + 淡玻璃底 + 顶部高光）。
+       注意：代理模式那条没有 ？图标，所以还要用 div.MuiTypography-caption 兜住 */
 .base-content
   [class*="MuiGrid"]
   > .MuiBox-root
-  .MuiTypography-caption:has(> .MuiSvgIcon-root) {
+  .MuiTypography-caption:has(> .MuiSvgIcon-root),
+.base-content
+  [class*="MuiGrid"]
+  > .MuiBox-root
+  div.MuiTypography-caption {
   border-color: var(--lg-border) !important;
   background-color: var(--lg-tint) !important;
   background-image: var(--lg-sheen) !important;
   box-shadow: inset 0 1px 0 var(--lg-highlight-soft) !important;
+}
+
+/* 5.5 网络设置 / 代理模式里选中页签下方那条竖线指示条：主色蓝 → 白 */
+.base-content
+  [class*="MuiGrid"]
+  > .MuiBox-root
+  .MuiPaper-root::after {
+  background-color: rgba(255, 255, 255, 0.75) !important;
 }
 
 /* ============================================================
