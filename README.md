@@ -1,10 +1,16 @@
-点击theme.css，复制里面代码，打开Clash Verge，找到css注入，清空里面代码，粘贴复制好的代码，点击保存
-<img width="1025" height="774" alt="image" src="https://github.com/user-attachments/assets/8ccc026e-6954-4116-8e91-a97d29d244cf" />
-<img width="1028" height="773" alt="image" src="https://github.com/user-attachments/assets/cf9e7b97-bfdc-468d-b665-8b526fbc7dfa" />
+打开Clash Verge软件，点击设置
+<img width="1034" height="813" alt="image" src="https://github.com/user-attachments/assets/2d91893c-55db-4a03-8aab-f8a7849bf55c" />
 
-方法一：第15行代码，粘贴自己的图片网址保存即可
+点击（编辑css）ctrl+a清除里面的代码
+<img width="1048" height="823" alt="image" src="https://github.com/user-attachments/assets/fe301498-e654-446f-b099-115a9836b56c" />
 
-方法二：第15行代码里，我已把自己网址粘贴进去了，直接复制theme.css里面的代码，粘贴保存就能用；1-9，01-04，是壁纸图片链接
+回到github点击Clash Verge.css文件，复制里面全部代码粘贴保存
+<img width="1010" height="810" alt="image" src="https://github.com/user-attachments/assets/fdc38f1a-d34e-4ded-afa9-823688a36146" />
 
-想更换壁纸，编辑代码图片中的数字即可，目前我只上传了1-9，01-04数字，改变数字即可更换壁纸成功
-<img width="1020" height="761" alt="image" src="https://github.com/user-attachments/assets/287625c5-ebde-465b-a3d3-a5cf739c30f7" />
+1注释：壁纸方法：代码第15行，我把自己网址粘贴进去了，直接复制Clash Verge.css文件里的代码，粘贴保存就能用；
+
+2注释:你想用自己的壁纸，把你自己的图片上传到在线网址，然后复制图片网址到第15行代码，把我的网址替换掉就变成你自己壁纸了；
+
+3注释:数字命名的.webp都是我自己上传的壁纸，想要换壁纸修改图下的数字即可，把.webp前面的数字填进去就换成功了
+<img width="1048" height="823" alt="image" src="https://github.com/user-attachments/assets/9e84edbd-1563-47b8-b50f-260b5c7297d7" />
+
