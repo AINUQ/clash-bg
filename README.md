@@ -16,3 +16,8 @@
 <img width="998" height="809" alt="image" src="https://github.com/user-attachments/assets/5ccaba4e-8e96-4b62-84e3-dabb87c46052" />
 
 
+
+去除上面大黑边或者大白边，打开软件，设置，界面设置，关掉第一个（优先使用系统标题栏
+）即可
+<img width="1015" height="813" alt="B`F}X S_Z35BC%YLSPM(%C3" src="https://github.com/user-attachments/assets/cd49087e-57bc-4f41-894d-095dc82b2390" />
+
