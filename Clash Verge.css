@@ -396,10 +396,6 @@ body::after {
   box-shadow: none !important;
 }
 
-.base-content .MuiBox-root[aria-selected="true"] {
-  border-left: 3px solid var(--lg-accent) !important;
-}
-
 .base-content [class*="MuiGrid"] > .MuiBox-root > .MuiBox-root {
   background: transparent !important;
 }
@@ -424,18 +420,12 @@ body::after {
   border-color: var(--lg-border-hover) !important;
 }
 
-/* 5.1.1 流量曲线面板（canvas）：底色完全透明、不加反光，只留描边，
-       避免在照片壁纸上蒙出一层白。曲线看不清时可换成 rgba(6, 10, 20, 0.12) 轻微压暗 */
+/* 5.1.1 流量曲线面板（canvas）：只覆盖底色（透明、不加反光），
+       描边/高光沿用上面 5.1 那套。曲线看不清时可换成 rgba(6, 10, 20, 0.12) 轻微压暗 */
 .base-content [class*="MuiGrid"] > .MuiPaper-root:not(.MuiCard-root):has(canvas) {
   position: relative !important;
-  border: 1px solid var(--lg-border) !important;
   background-color: transparent !important;
   background-image: none !important;
-  box-shadow:
-    var(--lg-shadow),
-    inset 0 1px 0 var(--lg-highlight),
-    inset 0 -1px 0 var(--lg-highlight-soft),
-    inset 1px 0 0 var(--lg-highlight-soft) !important;
 }
 
 /* 5.2 订阅页的配置卡片（ProfileBox）：底色透明，只留描边包裹 */
@@ -588,9 +578,8 @@ body::after {
   background-color: var(--lg-hover) !important;
 }
 
-/* 选中的节点：白色左边线 + 极淡玻璃底（应用原本是主色蓝，这里统一成白色） */
-.base-content [class*="MuiGrid"] > .MuiBox-root .MuiListItemButton-root.Mui-selected,
-.base-content .MuiList-root > .MuiListItem-root > .MuiListItemButton-root.Mui-selected,
+/* 选中的节点：白色左边线 + 极淡玻璃底（应用原本是主色蓝，这里统一成白色）。
+   这一条已经覆盖所有容器里的选中项，不用再按列表结构重复写 */
 .base-content .MuiListItemButton-root.Mui-selected {
   border-left: 3px solid var(--lg-accent) !important;
   background-color: var(--lg-accent-fill) !important;
@@ -808,18 +797,14 @@ body .MuiIconButton-root {
   color: var(--lg-text-dim);
 }
 
-/* 开关：透明胶囊 —— 很淡的白底 + 一圈白色细边 + 顶部高光，不压暗、不发灰 */
+/* 开关：透明胶囊 —— 很淡的白底 + 一圈白色细边 + 顶部高光，不压暗、不发灰
+   （开/关同色，靠滑块位置表示状态，所以这里不需要再单独写 Mui-checked 的规则） */
 body .MuiSwitch-track {
   border: 0 !important;
   background-color: rgba(255, 255, 255, 0.16) !important;
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-}
-
-body .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
-  border: 0 !important;
-  background-color: rgba(255, 255, 255, 0.16) !important;
 }
 
 body .MuiSwitch-thumb {
