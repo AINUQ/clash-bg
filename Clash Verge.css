@@ -699,11 +699,9 @@ body::after {
   box-shadow: none !important;
 }
 
-/* 滚动区吸顶行（连接页表头等） */
+/* 滚动区吸顶行（连接页表头等）—— 不加背景模糊 */
 .base-content div[style*="position: sticky"] > div[style*="display: flex"] {
   background-color: var(--lg-sticky-bg) !important;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   border-bottom-color: var(--lg-border-soft) !important;
 }
 
@@ -715,16 +713,16 @@ body::after {
   border-bottom-color: transparent !important;
 }
 
-/* 连接页表头（主机 / 下载量 / 上传量 …）：透明包裹，加描边与圆角 */
+/* 连接页表头（主机 / 下载量 / 上传量 …）：透明底 + 描边，不加模糊也不铺黑底 */
 .base-content
   div[style*="position: sticky"]
   > div[style*="display: flex"]:has(button):not(:has(input)) {
   border: 1px solid var(--lg-border) !important;
   border-bottom-color: var(--lg-border) !important;
   border-radius: 10px !important;
-  background-color: var(--lg-tint) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(1.2);
-  backdrop-filter: blur(10px) saturate(1.2);
+  background-color: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
   box-shadow: inset 0 1px 0 var(--lg-highlight-soft) !important;
 }
 
